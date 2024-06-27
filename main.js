@@ -20,7 +20,7 @@ createApp ({
             .then ((mailItem) =>{
                 const eMail = mailItem.data.response;
                 console.log(eMail);
-                this.mailItem= eMail;
+                this.mailList= eMail;
             })
     }
     
