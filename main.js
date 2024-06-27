@@ -17,9 +17,10 @@ createApp ({
     // le funfioni per stampare le 10 mail random
     mounted () {
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-            .then (function(mailItem) {
-                const eMail = mailItem.data;
+            .then ((mailItem) =>{
+                const eMail = mailItem.data.response;
                 console.log(eMail);
+                this.mailItem= eMail;
             })
     }
     
