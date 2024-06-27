@@ -11,5 +11,12 @@
     margin: 50px auto;
     background-color: darkolivegreen;
     color: white;
+}
 
+#app h2 {
+    margin-bottom: 30px;
+}
+#app li {
+    list-style: none;
+    font-size: 12px;
 }
