@@ -16,7 +16,7 @@
         <h2> {{title}}</h2>
         <ul class="list-page">
 
-            <li v-for="email in mailList " >
+            <li v-for="(email, index) in mailList " :key="index" >
                 <span class="list-item">{{email}}</span>
             </li>
         </ul>
