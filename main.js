@@ -13,9 +13,17 @@ createApp ({
             ]
         }
     },
+    // metodo per generare 10 e-mai con la funzione axios
+    methods:{
+        dieci(){
+            if(this.mailList.length < 10){
+            }
+        }
+    },
 
     // le funfioni per stampare le 10 mail random
     mounted () {
+        
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then ((mailItem) =>{
                 const eMail = mailItem.data.response;

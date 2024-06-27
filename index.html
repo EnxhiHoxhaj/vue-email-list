@@ -15,7 +15,12 @@
     <div id="app">
         <h2> {{title}}</h2>
         <ul class="list-page">
-            <li>
+           <!--
+            <li v-if="mailList.length !== 10 : mailItem">
+                <span class="list-item">{{mailList}}</span>
+            </li>
+            --> 
+            <li v-if="mailList.length !== 10">
                 <span class="list-item">{{mailList}}</span>
             </li>
         </ul>
